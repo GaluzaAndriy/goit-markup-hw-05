@@ -119,7 +119,7 @@ body {
   padding-bottom: 24px;
   padding-left: 20px;
 
-  font-weight: 700;
+  font-weight: var(--main-font-weigth);
   font-size: var(--main-font-size);
   line-height: 1.5;
   letter-spacing: var(--main-letter-spacing);
@@ -187,10 +187,10 @@ body {
 .hero-title {
   margin-left: auto;
   margin-right: auto;
-  width: 494px;
+  width: 496px;
   height: 120px;
   margin-bottom: 48px;
-  font-weight: var(--main-font-weigth);
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: var(--main-letter-spacing);
