@@ -128,7 +128,7 @@ body {
 }
 
 .header-link.current::after {
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100% - 40px);
   height: 4px;
@@ -304,6 +304,7 @@ body {
 }
 
 .examples-title {
+  width: 100%;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -599,14 +600,36 @@ body {
   position: absolute;
   top: 0;
   font-size: 16px;
-line-height: 1.5px;
-letter-spacing: var(--main-letter-spacing);
-color: #F4F4FD;
-background-color: #4d5ae5;
-padding: 40px;
-height: 100%;
-transform: translateY(100%);
-transition: transform 300ms linear ;
+  line-height: 1.5;
+  letter-spacing: var(--main-letter-spacing);
+  color: #f4f4fd;
+  /* background-color: #4d5ae5; */
+  /* background-image: linear-gradient(
+      0deg,
+      rgba(77, 90, 229, 0.1),
+      rgba(77, 90, 229, 0.1)
+    ),
+    url(4); */
+  background-image: linear-gradient(
+      rgba(77, 90, 229, 0.1),
+      rgba(77, 90, 229, 0.1)
+    ),
+    url(../images/fon.svg);
+  background-blend-mode: soft-light, normal;
+  mix-blend-mode: normal;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
 }
 
 .services-item {
@@ -619,7 +642,6 @@ transition: transform 300ms linear ;
   /* border: 0.5px solid #f4f4fd; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
 }
 .services-title {
   margin-top: 31px;
